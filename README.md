@@ -206,6 +206,7 @@ Revenue follows a Pareto-like distribution, where a relatively small share of cu
 
 **Key takeaway:** Targeted retention strategies focused on high-value customers could significantly increase revenue efficiency.
 
+
 ## Key insight
 ### Extremely Low Customer Retention
 Approximately **94% of customers make only one purchase**, indicating very low customer retention.
@@ -217,6 +218,20 @@ Customers who make a second purchase generate approximately **1.5X higher** medi
 Half of repeat purchases occur within **28 days after the first purchase**, indicating a critical retention window shortly after the initial transaction.
 ### Revenue depends heavily on customer acquisition
 More than 90% of revenue comes from one-time buyers.
+
+## Why Retention Appears Extremely Low
+The extremely low retention rate observed in the dataset can be explained by several structural factors.
+
+First, the dataset represents transactions from a marketplace environment where purchases are typically need-based rather than habit-based. Customers often buy a product to solve a specific need and may not return frequently.
+
+Second, customers in the dataset interact primarily with large marketplaces such as Mercado Livre or Magazine Luiza rather than directly with Olist itself. As a result, customer loyalty is directed toward the marketplace rather than the underlying seller infrastructure.
+
+Third, many products in the dataset belong to categories such as electronics, furniture, and home appliances, which naturally have low purchase frequency and long replacement cycles.
+
+Finally, the dataset covers a limited time window, which may underestimate repeat purchase behavior for customers whose next purchase occurs outside the observation period. Revenue is strongly concentrated among a relatively small share of customers.
+
+A minority of high-value customers contributes a disproportionate portion of total revenue, indicating that repeat customers play a crucial role in overall business performance.
+
 
 ##  Business Impact
 The platform currently relies heavily on **new customer acquisition**, as over **90% of revenue originates from one-time buyers.**
@@ -250,11 +265,43 @@ Potential approaches include:
 - Targeted retention campaigns
 - Personalized offers for high-spending customers
 - Loyalty programs for repeat buyers.
+  
+## Strategic Opportunity Simulation
+
+The analysis shows that the marketplace relies heavily on customer acquisition, with 94% of customers making only one purchase.
+However, customers who make repeat purchases generate significantly higher lifetime value.
+To estimate the potential impact of improved retention, we simulate a scenario where the repeat purchase rate increases from: 5.9% → 10%
+**Baseline Metrics
+**
+<img width="464" height="199" alt="image" src="https://github.com/user-attachments/assets/a878b8c5-513f-4635-beb0-f59f40af6843" />
+Customers who make a second purchase generate approximately 1.5X higher median lifetime value.
+**Revenue Impact Estimate
+**
+If the repeat purchase rate increases to 10%, the number of repeat customers would increase from approximately 5,841 to 9,900 customers.
+Estimated incremental revenue:
+≈ 4,059 additional repeat customers
+× ~40 incremental LTV
+≈ 162K additional revenue
+
+<img width="1411" height="871" alt="image" src="https://github.com/user-attachments/assets/32e942b5-6c2c-4981-bb4f-32289f57b735" />
+
+**Strategic Insight
+**
+Even a modest improvement in repeat purchase rates could generate meaningful revenue growth without increasing acquisition costs.
+
+Given that half of second purchases occur within 28 days, retention initiatives should focus on the post-purchase engagement window
+**Key Opportunity
+**
+The most impactful growth lever for the platform is likely improving early customer retention, particularly encouraging customers to make their second purchase
+
+  
 ## Conclusion
 
 This analysis highlights that while the marketplace has experienced strong customer acquisition growth, customer retention remains extremely low.
 
 Improving early retention and encouraging second purchases represents a key opportunity to increase customer lifetime value and improve the sustainability of the platform's revenue model.
+
+
 
 # Full Analysis Notebook
 The full analysis workflow, including data preparation, SQL queries, and visualizations, can be found in:
