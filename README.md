@@ -21,17 +21,16 @@ The analysis reveals that customer retention is extremely low: **94% of customer
 
 These findings suggest that improving early post-purchase engagement could significantly increase customer lifetime value and reduce reliance on new customer acquisition.
 
-# Dataset
+## Dataset
 **Source**
 Brazilian E-Commerce Public Dataset by Olist
 https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
-
-**Tables used **
+**Tables used**
 The analysis focuses on the core transactional tables:
-
 - olist_orders_dataset
 - olist_customers_dataset
 - olist_order_payments_dataset
+
 **Time range**
 Transactions span from 2016 to 2018, covering approximately two years of marketplace activity.
 
@@ -40,7 +39,7 @@ Transactions span from 2016 to 2018, covering approximately two years of marketp
 - Only valid completed transactions are used for retention and revenue analysis.
 - Data cleaning and filtering steps are documented in the notebook.
 
-# Project Structure
+## Project Structure
 The repository is organized to separate data, analysis code, and visual outputs for clarity and reproducibility.
 ```
 ecommerce-retention-analysis
@@ -98,35 +97,35 @@ The analysis was conducted in Python using a combination of cohort analysis, ret
 4. Evaluating time between purchases
 5. Quantifying revenue contribution by customer segment
 
-**Tools used:**
+**Technical Tools used:**
 - Python: Jupyter / Colab
 - SQL: DuckDB 
 - Libarry: Pandas | Matplotlib | Seaborn
 
 ## Methodology
-1. Data Preparation
+**1. Data Preparation**
 Data from multiple tables were joined to construct a customer-level purchase history.
 Key steps included:
 - Filtering valid completed orders
 - Calculating order revenue using payment data
 - Identifying each customer's first purchase date
 - Aggregating purchase counts and revenue per custome
-2.  Cohort Analysis
+**2.  Cohort Analysis**
 Customers were grouped by the month of their first purchase to analyze retention behavior across cohorts.
 Customer acquisition grew significantly from 2016 to late 2017, reflecting rapid marketplace expansion during this period.
-4.  Customer Retention
+**3.  Customer Retention**
 Retention measures the percentage of customers who return after their first purchase.
 Retention drops sharply after the first purchase, indicating that the majority of customers do not return to the platform.
 This suggests the marketplace behaves more like a transactional marketplace rather than a loyalty-driven retail platform.
-5.  Customer Lifetime Value Distribution
+**4.  Customer Lifetime Value Distribution**
 Customer revenue distribution is highly skewed.
 Most customers generate relatively small lifetime value, while a small minority of customers generate significantly higher revenue.
 A log transformation is used to better visualize this long-tail distribution.
-6.  Revenue Contribution by Customer Type
+**5.  Revenue Contribution by Customer Type**
 Customers were segmented into two groups to determine the contribution of customer & revenue contribution
 - One-time customers
 - Repeat customers
-7.  Time to Second Purchase
+**6.  Time to Second Purchase**
 
 **Key statistics:**
 Median time to second purchase: 28 days
@@ -136,30 +135,36 @@ This suggests that when customers do return, they tend to do so relatively soon 
 
 ##  Analysis
 **Customer Acquisition Trends**
+
 Customer acquisition increased significantly throughout 2017, suggesting rapid marketplace expansion during this period.
 However, strong acquisition growth alone does not guarantee sustainable revenue growth if retention remains low.
 **Key takeaway:** The platform demonstrates strong customer acquisition but weak long-term engagement.
 
 **Customer Retention Behavior**
+
 Customer retention drops sharply after the first purchase, falling below 1% within the first month.
 This indicates that most customers do not return after completing their initial transaction.
 
 **Key takeaway:** The marketplace currently behaves more like a transactional platform rather than a recurring shopping destination.
 
 **Repeat Purchase Distribution**
+
 Customer purchase frequency is highly skewed, with the majority of customers making only one purchase.
 **Key takeaway:** The platform captures only a small portion of potential lifetime value because very few customers progress to repeat purchasing behavior.
 
 **Customer Lifetime Value Distribution**
+
 Customer lifetime value follows a strongly right-skewed distribution, where a small number of customers generate disproportionately high revenue.
 **Key takeaway:**  Increasing the number of repeat customers could significantly shift the revenue distribution.
 
 **Revenue Growth by Purchase Frequency**
+
 Customers who make multiple purchases generate substantially higher lifetime revenue.
 For example, customers who make two purchases generate approximately 1.5× higher median revenue than one-time buyers.
 **Key takeaway:** Encouraging a second purchase represents one of the most impactful levers for increasing customer lifetime value.
 
 **Revenue Contribution by Customer Segment**
+
 Customer segmentation reveals:
 - 94% of customers are one-time buyers
 - Repeat customers represent only 5.9% of the customer base
