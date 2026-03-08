@@ -66,7 +66,6 @@ ecommerce-retention-analysis
 │   ├── olist_customers_dataset.csv
 │   ├── olist_order_payments_dataset.csv
 │   ├── olist_orders_dataset.csv
-│   └── data_src
 │
 └── README.md
 ```
@@ -98,7 +97,7 @@ The analysis was conducted in Python using a combination of cohort analysis, ret
 5. Quantifying revenue contribution by customer segment
 
 **Technical Tools used:**
-- Python: Jupyter / Colab
+- Python: Google Colab
 - SQL: DuckDB 
 - Libarry: Pandas | Matplotlib | Seaborn
 
@@ -111,17 +110,21 @@ Key steps included:
 - Identifying each customer's first purchase date
 - Aggregating purchase counts and revenue per custome
 **2.  Cohort Analysis**
+  
 Customers were grouped by the month of their first purchase to analyze retention behavior across cohorts.
 Customer acquisition grew significantly from 2016 to late 2017, reflecting rapid marketplace expansion during this period.
 **3.  Customer Retention**
+
 Retention measures the percentage of customers who return after their first purchase.
 Retention drops sharply after the first purchase, indicating that the majority of customers do not return to the platform.
 This suggests the marketplace behaves more like a transactional marketplace rather than a loyalty-driven retail platform.
 **4.  Customer Lifetime Value Distribution**
+
 Customer revenue distribution is highly skewed.
 Most customers generate relatively small lifetime value, while a small minority of customers generate significantly higher revenue.
 A log transformation is used to better visualize this long-tail distribution.
 **5.  Revenue Contribution by Customer Type**
+
 Customers were segmented into two groups to determine the contribution of customer & revenue contribution
 - One-time customers
 - Repeat customers
