@@ -162,9 +162,10 @@ This indicates that most customers do not return after completing their initial 
 **3. Repeat Purchase Distribution**
 <img width="1771" height="871" alt="4  repeat_purchase_distribution_portfolio" src="https://github.com/user-attachments/assets/8efcdd0d-c3df-4121-afcb-6671537f83a3" />
 
+Nealy 95% of customers made only a single purchase, which explains the sharp retention drop observed in the cohort analysis.
 Customer purchase frequency is highly skewed, with the majority of customers making only one purchase.
 
-**Key takeaway:** The platform captures only a small portion of potential lifetime value because very few customers progress to repeat purchasing behavior.
+**Key takeaway:** The platform captures only a small portion of potential lifetime value because very few customers progress to repeat purchasing behavior. This suggests that Olist operates more like a one-time purchase marketplace than a habit-driven ecommerce platform.
 
 **4. Customer Lifetime Value Distribution**
 <img width="2951" height="1450" alt="6  ltv_distribution_log" src="https://github.com/user-attachments/assets/8646441e-6a8c-4460-b8a1-e77b17f4f3f1" />
