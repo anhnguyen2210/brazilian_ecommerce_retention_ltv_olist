@@ -7,16 +7,18 @@ This project analyzes customer purchasing behavior in the Olist Brazilian E-Comm
 The analysis reveals that customer retention is extremely low: **94% of customers make only one purchase**, and only **5.9% return for additional purchases**. Despite this, repeat customers generate significantly higher lifetime value, indicating a strong opportunity to increase revenue through improved retention.
 
 **Key findings:**
-- **94% of customers are one-time buyers**
-- Repeat customers generate ~1.5X higher median lifetime value
+- **94% of customers are one-time buyers.**
+- **Repeat** buyers represent only **5.9%** of the user base, generating **~1.5X higher** median lifetime value
 - **50% of repeat purchases occur within 28 days**, indicating a critical early retention window
 - Over **90% of revenue comes from one-time customers**, suggesting heavy dependence on customer acquisition
 
 **Key metrics:**
-- Customer retention rate (1st month): <1%
-- Repeat customer rate: 5.9%
-- Median time to second purchase: 28 days
-- Revenue share from repeat customers: 8.5%
+- Total customers analyzed: ~99K, Time period: 2016–2018
+- Customer retention rate (1st month): <1%.
+   Median order value: ~85.
+- Repeat customer rate: 5.9%.
+- Median time to second purchase: 28 days.
+- Revenue share from repeat customers: 8.5%.
 
 
 These findings suggest that improving early post-purchase engagement could significantly increase customer lifetime value and reduce reliance on new customer acquisition.
@@ -44,6 +46,7 @@ The repository is organized to separate data, analysis code, and visual outputs 
 ```
 ecommerce-retention-analysis
 │
+└── README.md
 ├── chart/
 │   ├── cohort_size_portfolio.png
 │   ├── retention_heatmap_portfolio.png
@@ -57,7 +60,7 @@ ecommerce-retention-analysis
 │
 ├── notebooks/
 │   └── python/
-│       └── Brazilian_E_Commerce.ipynb
+│       └── Brazilian E-commerce Customer Retention Analysis.ipynb
 │
 ├── sql/
 │   └── query_data.sql
@@ -66,8 +69,7 @@ ecommerce-retention-analysis
 │   ├── olist_customers_dataset.csv
 │   ├── olist_order_payments_dataset.csv
 │   ├── olist_orders_dataset.csv
-│
-└── README.md
+
 ```
 
 
