@@ -310,3 +310,4 @@ The full analysis workflow, including data preparation, SQL queries, and visuali
 ```
 notebooks/python/Brazilian E-commerce Customer Retention Analysis.ipynb
 ```
+https://github.com/Ahny2131/brazilian_ecommerce_retention_ltv_olist/blob/cce6894a5e8a976793346de5a023528157fcb1cf/notebook/Brazilian%20E-commerce%20Customer%20Retention%20Analysis.ipynb
